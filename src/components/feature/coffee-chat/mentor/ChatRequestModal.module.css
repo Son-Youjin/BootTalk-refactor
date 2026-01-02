@@ -1,0 +1,45 @@
+/* ChatRequestModal.module.css */
+.datepickerWrapper {
+  /* 전체 컨테이너 크기 */
+  width: 100%; /* 원하는 너비로 조정 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.datepickerWrapper :global(.react-datepicker) {
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: medium;
+  padding: 10px;
+}
+
+.datepickerWrapper :global(.react-datepicker__header) {
+  background-color: white;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  padding-top: 20px;
+}
+
+.datepickerWrapper :global(.react-datepicker__current-month) {
+  color: black;
+  font-weight: bold;
+}
+
+.datepickerWrapper :global(.react-datepicker__day-name) {
+  color: black;
+  font-weight: 500;
+}
+
+.datepickerWrapper :global(.react-datepicker__day--selected) {
+  background-color: #7c2d12; /* amber-900 */
+}
+
+/* 선택된 날짜에 호버 했을 때 색상 유지 */
+.datepickerWrapper :global(.react-datepicker__day--selected:hover) {
+  background-color: #7c2d12 !important; /* !important 추가 */
+}
+
+.datepickerWrapper :global(.react-datepicker__day--highlighted) {
+  background-color: #fbbf24; /* amber-300 */
+}

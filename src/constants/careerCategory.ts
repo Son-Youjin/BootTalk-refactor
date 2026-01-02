@@ -1,0 +1,20 @@
+export const careerCategory = [
+  { value: "응용SW엔지니어링", label: "응용SW엔지니어링" },
+  { value: "정보보호관리·운영", label: "정보보호관리·운영" },
+  { value: "SW제품기획", label: "SW제품기획" },
+  { value: "빅데이터분석", label: "빅데이터분석" },
+  { value: "인공지능서비스구현", label: "인공지능서비스구현" },
+  { value: "UI/UX엔지니어링", label: "UI/UX엔지니어링" },
+  { value: "보안엔지니어링", label: "보안엔지니어링" },
+  { value: "전자응용기기하드웨어개발", label: "전자응용기기하드웨어개발" },
+  { value: "디지털비즈니스지원서비스", label: "디지털비즈니스지원서비스" },
+  { value: "반도체개발", label: "반도체개발" },
+  {
+    value: "클라우드인프라스트럭쳐엔지니어링",
+    label: "클라우드인프라스트럭쳐엔지니어링",
+  },
+  { value: "빅데이터플랫폼구축", label: "빅데이터플랫폼구축" },
+  { value: "DB엔지니어링", label: "DB엔지니어링" },
+  { value: "클라우드솔루션아키텍처", label: "클라우드솔루션아키텍처" },
+  { value: "IoT시스템연동", label: "IoT시스템연동" },
+];
