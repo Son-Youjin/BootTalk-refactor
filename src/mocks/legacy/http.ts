@@ -1,7 +1,7 @@
 import cors from "cors";
 import express from "express";
 import { createMiddleware } from "@mswjs/http-middleware";
-import { handlers } from "./handlers";
+import { handlers } from "@/mocks/handlers";
 
 const app = express();
 const port = 9090; // Mock

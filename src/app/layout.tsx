@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+import MSWProvider from "@/mocks/MSWProvider";
 import QueryProvider from "@/provider/QueryProvider";
 import Header from "@/components/common/Header";
 import { Toaster } from "react-hot-toast";
@@ -19,12 +20,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen">
-        <QueryProvider>
-          <Header />
-          <main className="flex-grow min-h-[800px]">{children}</main>
-          <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
-          <Footer />
-        </QueryProvider>
+        <MSWProvider>
+          <QueryProvider>
+            <Header />
+            <main className="flex-grow min-h-[800px]">{children}</main>
+            <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
+            <Footer />
+          </QueryProvider>
+        </MSWProvider>
       </body>
     </html>
   );
